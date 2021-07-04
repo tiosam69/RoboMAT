@@ -51,7 +51,7 @@ void loop() {
  // read calibrated sensor values and obtain a measure of the line position
   // from 0 to 5000 (for a white line, use readLineWhite() instead)
   uint16_t position = qtr.readLineBlack(sensorValues);
-
+//Configuración para realizar  giro a la izquierda
   if((sensorValues[3]>sensorValues[2])&&position == 3000)// giro izq
   {
     motor1.run(BACKWARD);
